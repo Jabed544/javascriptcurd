@@ -1,0 +1,12 @@
+body{
+	background-color:green;
+}
+.main{
+	position: absolute;
+	right:300px;
+	background-color: gray;
+	width:50%;
+	height: 100%;
+	padding: 20px;
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+	<div class="main">
+<form>
+	NAME:<input type="text"name="name"id="name"size="50"><br><br>
+	FATHE NAME:<input type="text"name="father"id="father"size="40"><br><br>
+	MOBILE NO:<input type="num" name="mobile"id="mobile"size="50"><br><br>
+</form>
+<table border="1px solid red"id="mytbl">
+	<tr>
+		<th>NAME</th>
+		<th>FATHER NAME</th>
+		<th>MOBILE NUMBER</th>
+	</tr>
+	<tr>
+		<td id="first"></td>
+		<td id="second"></td>
+		<td id="third"></td>
+	</tr><hr>
+
+</table><hr>
+<button onclick="add()">ADD</button>
+	<button onclick="delet()">DELETE</button>
+	<button onclick="prin()">PRINT</button>
+</div>
+	<script type="text/javascript">
+		function add(){
+			var table=document.getElementById("mytbl");
+			var row=table.insertRow(-1);
+			var cell=row.insertCell(0).textContent=document.getElementById('mobile').value;
+			var cell=row.insertCell(0).textContent=document.getElementById('father').value;
+			var cell=row.insertCell(0).textContent=document.getElementById('name').value;
+		}
+		function delet(){
+          var tab=document.getElementById("mytbl");
+          tab.deleteRow(1);
+		}
+		function prin(){
+			print();
+		}
+	</script>
+</body>
+</html>
